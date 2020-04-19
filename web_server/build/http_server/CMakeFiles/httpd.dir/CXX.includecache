@@ -448,9 +448,9 @@ stdint.h
 stdio.h
 -
 
-/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/simplest_web_server.cpp
+/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/httpd_mongoose/simplest_web_server.cpp
 mongoose.h
-/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/mongoose.h
+/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/httpd_mongoose/mongoose.h
 string
 -
 iostream

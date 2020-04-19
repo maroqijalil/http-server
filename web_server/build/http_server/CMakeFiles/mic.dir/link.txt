@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/mic.dir/src/httpd_micro/src/microhttpd.c.o  -o mic -lmicrohttpd 

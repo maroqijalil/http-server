@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
   "../http_server/CMakeLists.txt"
   "../library/CMakeLists.txt"
+  "../library/microhttpd/FindLibMicroHTTPD.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"
@@ -48,4 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "library/CMakeFiles/mongoose.dir/DependInfo.cmake"
   "http_server/CMakeFiles/httpd.dir/DependInfo.cmake"
+  "http_server/CMakeFiles/mic.dir/DependInfo.cmake"
   )

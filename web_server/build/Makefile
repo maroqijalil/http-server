@@ -136,6 +136,19 @@ httpd/fast:
 	$(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/build
 .PHONY : httpd/fast
 
+#=============================================================================
+# Target rules for targets named mic
+
+# Build rule for target.
+mic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mic
+.PHONY : mic
+
+# fast build rule for target.
+mic/fast:
+	$(MAKE) -f http_server/CMakeFiles/mic.dir/build.make http_server/CMakeFiles/mic.dir/build
+.PHONY : mic/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,6 +159,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... mongoose"
 	@echo "... httpd"
+	@echo "... mic"
 .PHONY : help
 
 

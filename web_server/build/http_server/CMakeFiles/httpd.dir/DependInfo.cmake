@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/simplest_web_server.cpp" "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/build/http_server/CMakeFiles/httpd.dir/src/simplest_web_server.cpp.o"
+  "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/httpd_mongoose/simplest_web_server.cpp" "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/build/http_server/CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah-Kurang</title>
+  <style>
+    .btn {
+      border: none;
+      background-color: rgb(155, 255, 124);
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .kotak { padding: 20px 20px;}
+    .ombo { padding: 20px 50px;}
+  </style>
+  <style>
+    .box {
+      display: inline-block;
+      border: 1px;
+      border-color: black;
+      border-style: outset;
+      background-color: inherit;
+      padding: 20px 50px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="num">
+    <form method="POST" id="num1">
+      <button id="add" onclick="add_o()" class="btn kotak">+</button>
+      <input id="nom1" name="num1" class="box" type="number" value="0">
+      <button id="subt" onclick="subt_o()" class="btn kotak">-</button>
+    </form>
+    
+    <form method="POST" id="num2">
+      <button id="add" onclick="add_t()" class="btn kotak">+</button>
+      <input id="nom2" name="num2" class="box" type="number" value="0">
+      <button id="subt" onclick="subt_t()" class="btn kotak">-</button>
+    </form>
+    
+    <form method="POST" action="result.html">
+      <input type="submit" name="result" class="btn ombo" value="Tambah">
+      <input type="submit" name="result" class="btn ombo" value="Kurang">
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    var num2 = document.getElementById("nom2");
+    var num1 = document.getElementById("nom1");
+
+    function add_t() {
+      num2.value = parseInt(num2.value) + 5;
+    }
+
+    function add_o() {
+      num1.value = parseInt(num1.value) + 5;
+    }
+
+    function subt_t() {
+      num2.value = parseInt(num2.value) - 5;
+    }
+
+    function subt_o() {
+      num1.value = parseInt(num1.value) - 5;
+    }
+  </script>
+</body>
+</html>

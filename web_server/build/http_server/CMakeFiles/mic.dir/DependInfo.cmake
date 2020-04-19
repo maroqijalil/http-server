@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/library/mongoose/src/mongoose.c" "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/build/library/mongoose/CMakeFiles/mongoose.dir/src/mongoose.c.o"
+  "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/http_server/src/httpd_micro/src/microhttpd.c" "/home/maroqi/Documents/ICHIRO2020/httpd/web_server/build/http_server/CMakeFiles/mic.dir/src/httpd_micro/src/microhttpd.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../library/mongoose/mongoose"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/httpd.dir/src/simplest_web_server.cpp.o"
+  "CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.o"
   "httpd.pdb"
   "httpd"
 )

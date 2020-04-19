@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/httpd.dir/src/simplest_web_server.cpp.o  -o httpd ../library/libmongoose.a 
+/usr/bin/c++     CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.o  -o httpd ../library/libmongoose.a 

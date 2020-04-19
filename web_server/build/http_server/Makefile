@@ -125,32 +125,74 @@ httpd/fast:
 	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/build
 .PHONY : httpd/fast
 
-src/simplest_web_server.o: src/simplest_web_server.cpp.o
+# Convenience name for target.
+http_server/CMakeFiles/mic.dir/rule:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f CMakeFiles/Makefile2 http_server/CMakeFiles/mic.dir/rule
+.PHONY : http_server/CMakeFiles/mic.dir/rule
 
-.PHONY : src/simplest_web_server.o
+# Convenience name for target.
+mic: http_server/CMakeFiles/mic.dir/rule
+
+.PHONY : mic
+
+# fast build rule for target.
+mic/fast:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/mic.dir/build.make http_server/CMakeFiles/mic.dir/build
+.PHONY : mic/fast
+
+src/httpd_micro/src/microhttpd.o: src/httpd_micro/src/microhttpd.c.o
+
+.PHONY : src/httpd_micro/src/microhttpd.o
 
 # target to build an object file
-src/simplest_web_server.cpp.o:
-	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/simplest_web_server.cpp.o
-.PHONY : src/simplest_web_server.cpp.o
+src/httpd_micro/src/microhttpd.c.o:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/mic.dir/build.make http_server/CMakeFiles/mic.dir/src/httpd_micro/src/microhttpd.c.o
+.PHONY : src/httpd_micro/src/microhttpd.c.o
 
-src/simplest_web_server.i: src/simplest_web_server.cpp.i
+src/httpd_micro/src/microhttpd.i: src/httpd_micro/src/microhttpd.c.i
 
-.PHONY : src/simplest_web_server.i
+.PHONY : src/httpd_micro/src/microhttpd.i
 
 # target to preprocess a source file
-src/simplest_web_server.cpp.i:
-	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/simplest_web_server.cpp.i
-.PHONY : src/simplest_web_server.cpp.i
+src/httpd_micro/src/microhttpd.c.i:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/mic.dir/build.make http_server/CMakeFiles/mic.dir/src/httpd_micro/src/microhttpd.c.i
+.PHONY : src/httpd_micro/src/microhttpd.c.i
 
-src/simplest_web_server.s: src/simplest_web_server.cpp.s
+src/httpd_micro/src/microhttpd.s: src/httpd_micro/src/microhttpd.c.s
 
-.PHONY : src/simplest_web_server.s
+.PHONY : src/httpd_micro/src/microhttpd.s
 
 # target to generate assembly for a file
-src/simplest_web_server.cpp.s:
-	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/simplest_web_server.cpp.s
-.PHONY : src/simplest_web_server.cpp.s
+src/httpd_micro/src/microhttpd.c.s:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/mic.dir/build.make http_server/CMakeFiles/mic.dir/src/httpd_micro/src/microhttpd.c.s
+.PHONY : src/httpd_micro/src/microhttpd.c.s
+
+src/httpd_mongoose/simplest_web_server.o: src/httpd_mongoose/simplest_web_server.cpp.o
+
+.PHONY : src/httpd_mongoose/simplest_web_server.o
+
+# target to build an object file
+src/httpd_mongoose/simplest_web_server.cpp.o:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.o
+.PHONY : src/httpd_mongoose/simplest_web_server.cpp.o
+
+src/httpd_mongoose/simplest_web_server.i: src/httpd_mongoose/simplest_web_server.cpp.i
+
+.PHONY : src/httpd_mongoose/simplest_web_server.i
+
+# target to preprocess a source file
+src/httpd_mongoose/simplest_web_server.cpp.i:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.i
+.PHONY : src/httpd_mongoose/simplest_web_server.cpp.i
+
+src/httpd_mongoose/simplest_web_server.s: src/httpd_mongoose/simplest_web_server.cpp.s
+
+.PHONY : src/httpd_mongoose/simplest_web_server.s
+
+# target to generate assembly for a file
+src/httpd_mongoose/simplest_web_server.cpp.s:
+	cd /home/maroqi/Documents/ICHIRO2020/httpd/web_server/build && $(MAKE) -f http_server/CMakeFiles/httpd.dir/build.make http_server/CMakeFiles/httpd.dir/src/httpd_mongoose/simplest_web_server.cpp.s
+.PHONY : src/httpd_mongoose/simplest_web_server.cpp.s
 
 # Help Target
 help:
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... httpd"
 	@echo "... edit_cache"
-	@echo "... src/simplest_web_server.o"
-	@echo "... src/simplest_web_server.i"
-	@echo "... src/simplest_web_server.s"
+	@echo "... httpd"
+	@echo "... mic"
+	@echo "... src/httpd_micro/src/microhttpd.o"
+	@echo "... src/httpd_micro/src/microhttpd.i"
+	@echo "... src/httpd_micro/src/microhttpd.s"
+	@echo "... src/httpd_mongoose/simplest_web_server.o"
+	@echo "... src/httpd_mongoose/simplest_web_server.i"
+	@echo "... src/httpd_mongoose/simplest_web_server.s"
 .PHONY : help
 
 

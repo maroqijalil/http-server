@@ -6,5 +6,5 @@ C_FLAGS =   -Wall -Wextra -Wpedantic
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/maroqi/Documents/ICHIRO2020/httpd/web_server/library/mongoose/mongoose 
+C_INCLUDES = 
 

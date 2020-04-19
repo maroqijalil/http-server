@@ -1,3 +1,6 @@
+// Copyright (c) 2015 Cesanta Software Limited
+// All rights reserved
+
 #include "mongoose.h"
 #include <string>
 #include <iostream>
@@ -25,8 +28,9 @@ int main(void) {
     return 1;
   }
 
+  // Set up HTTP server parameters
   mg_set_protocol_http_websocket(nc);
-  s_http_server_opts.document_root = root_path.c_str();
+  s_http_server_opts.document_root = root_path.c_str();  // Serve current directory
   // s_http_server_opts.index_files = "";
   s_http_server_opts.enable_directory_listing = "yes";
 
